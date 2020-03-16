@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+      <head>
+        <meta charset="utf-8" />
+        <title>Layout 7</title>
+        <style>
+            div {
+                outline: 1px solid black;
+            }
+    
+            #container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                margin: auto;
+                max-width: 800px;
+            }
+            
+            #ablue {
+                background-color: blue;
+                grid-column: 1/5;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                height: 200px;
+                padding: 20px;
+            }
+            
+            .ayellow {
+                background-color: yellow;
+                grid-column: 1/2, 3/5;
+                margin: 20px;
+            }
+            
+            
+            
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="container">
+            
+            <div id="ablue">
+                <div class="ayellow"></div>
+                <div class="ayellow"></div>
+            </div>
+            
+            <div id="bgreen"></div>
+            
+            <div id="cred">
+                <div class="cyellow1"></div>
+                <div class="cyellow2"></div>
+            </div>
+            
+            <div id="dblue">
+                <div class="dyellow1"></div>
+                <div class="dyellow2"></div>
+            </div>
+            
+            <div id="egreen">
+                <div class="eyellow1"></div>
+                <div class="eyellow2"></div>
+            </div>
+            
+            <div id="fred">
+                <div class="fyellow1"></div>
+                <div class="fyellow2"></div>
+                <div class="fyellow3"></div>
+            </div>
+            
+            <div id="gblue"></div>
+            
+        </div>
+    </body>
+
+</html>

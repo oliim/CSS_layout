@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Layout 6</title>
+        
+        <style>
+            div {
+                outline: 1px solid black;
+            } 
+            
+            #container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                margin: auto;
+                max-width: 800px;
+            }
+            
+            #blue {
+                grid-column: 1/2, 3/4;
+                background-color: blue;
+                height: 200px;
+                width: 400px;
+            }
+            
+            #green {
+                grid-column: 1/4;
+                background-color: lime;
+                height: 200px;
+            }
+            
+            #redcontainer {
+                grid-column: 1/4;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                background-color: red;
+                height: 400px;
+                padding: 20px;
+            }
+            
+            .yellow {
+                background-color: yellow;
+                margin: 20px;
+                grid-column: 1/1, 2/2, 3/3, 4/4;
+            }
+            
+            .wideyellow {
+                grid-column: 1/2, 3/4;
+                background-color: yellow;
+                margin: 20px;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="blue"></div>
+            <div id="blue"></div>
+            <div id="green"></div>
+            <div id="redcontainer">
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+                <div class="wideyellow"></div>
+                <div class="wideyellow"></div>
+            </div>
+        </div>
+    </body>
+
+</html>
